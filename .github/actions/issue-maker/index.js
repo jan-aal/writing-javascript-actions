@@ -15,8 +15,8 @@ async function run() {
       title: issueTitle,
       body: jokeBody
     });
-  } catch (error) {
-    core.setFailed(error.message);
+  } catch (err) {
+    core.setFailed(err.message);
   }
 }
 
